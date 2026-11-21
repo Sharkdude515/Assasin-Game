@@ -17,19 +17,25 @@ html, body {
 }
 
 canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
   display: block;
-  width: 100%;
-  height: 100%;
 }
 
 /* HUD */
 #hud {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  max-width: 380px;
   z-index: 10;
   background: rgba(15, 18, 25, 0.78);
-  padding: 10px 16px;
+  padding: 10px 14px;
   border-left: 4px solid #c92a2a;
   border-radius: 6px;
   pointer-events: none;
@@ -37,15 +43,15 @@ canvas {
 }
 
 #hud h1 {
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #ff6b6b;
 }
 
 #hud p {
-  font-size: 13px;
-  margin-top: 4px;
+  font-size: 12px;
+  margin-top: 3px;
   color: #dee2e6;
 }
 
@@ -56,7 +62,7 @@ canvas {
 
 #controls-hint {
   font-size: 11px;
-  margin-top: 6px;
+  margin-top: 5px;
   color: #adb5bd;
 }
 
@@ -93,7 +99,7 @@ canvas {
 }
 
 #message h2 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
@@ -125,10 +131,10 @@ canvas {
 
 #joystick-zone {
   position: absolute;
-  bottom: 24px;
-  left: 24px;
-  width: 120px;
-  height: 120px;
+  bottom: 20px;
+  left: 16px;
+  width: 104px;
+  height: 104px;
   pointer-events: auto;
 }
 
@@ -142,8 +148,8 @@ canvas {
 }
 
 #joystick-stick {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.45);
   position: absolute;
@@ -154,23 +160,23 @@ canvas {
 
 #action-buttons {
   position: absolute;
-  bottom: 24px;
-  right: 24px;
+  bottom: 20px;
+  right: 16px;
   display: flex;
-  gap: 12px;
+  gap: 8px;
   align-items: flex-end;
   pointer-events: auto;
 }
 
 .btn {
-  width: 58px;
-  height: 58px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.14);
   border: 2px solid rgba(255, 255, 255, 0.3);
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,9 +188,9 @@ canvas {
 }
 
 .btn-strike {
-  width: 68px;
-  height: 68px;
-  font-size: 13px;
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
   background: rgba(201, 42, 42, 0.55);
   border-color: #ff6b6b;
 }
