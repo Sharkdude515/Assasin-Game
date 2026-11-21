@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Shadow Creed: Bloodlines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="hud">
+    <h1>Shadow Creed: Cyprus</h1>
+    <p>Targets Remaining: <span id="targets-left">3</span></p>
+    <p>Status: <span id="status">HIDDEN</span></p>
+    <p id="controls-hint">PC: WASD Move | Drag Mouse Camera | Shift Sneak | Space Jump | E Strike</p>
+  </div>
+
+  <div id="prompt">ASSASSINATE</div>
+
+  <div id="message">
+    <h2 id="msg-title">MISSION COMPLETE</h2>
+    <p id="msg-sub">All targets eliminated without compromise.</p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+
+  <!-- Mobile Controls -->
+  <div id="touch-ui">
+    <div id="joystick-zone">
+      <div id="joystick-base">
+        <div id="joystick-stick"></div>
+      </div>
+    </div>
+    <div id="action-buttons">
+      <div class="btn" id="btn-sneak">SNEAK</div>
+      <div class="btn" id="btn-jump">JUMP</div>
+      <div class="btn btn-strike" id="btn-strike">STRIKE</div>
+    </div>
+  </div>
+
+  <!-- Three.js Library -->
+  <script src="https://cloudflare.com"></script>
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
